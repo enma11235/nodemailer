@@ -1,6 +1,6 @@
 const {Router} = require("express")
 const router = Router()
-const transport = require("../../src/transport.js")
+const transport = require("../transport.js")
 
 router.post("/send-email", async (req, res) => {
     const {name, email, phone, message} = req.body
